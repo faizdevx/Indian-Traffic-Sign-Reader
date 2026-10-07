@@ -139,9 +139,9 @@ def main(arch: str, argv=None) -> dict:
         raise RuntimeError("Empty train or val split; check data/processed/manifest.csv")
 
     tr_loader = make_loader(train_df, root, get_train_transform(args.image_size),
-                            args.batch_size, True, args.num_workers, args.seed)
+                            args.batch_size, True, args.num_workers, args.seed, args.image_size)
     va_loader = make_loader(val_df, root, get_eval_transform(args.image_size),
-                            args.batch_size, False, args.num_workers)
+                            args.batch_size, False, args.num_workers, 0, args.image_size)
 
     if arch == "cnn":
         name, mode, pretrained = "cnn", None, False

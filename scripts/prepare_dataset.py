@@ -13,6 +13,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 import numpy as np  # noqa: E402
+import pandas as pd  # noqa: E402
 
 from src import config  # noqa: E402
 from src.data import (assign_groups, carve_val_from_train, detect_layout,  # noqa: E402
@@ -27,6 +28,8 @@ def main():
     ap.add_argument("--source", type=Path, required=True)
     ap.add_argument("--name", default=None, help="dataset name recorded in split_info.json")
     ap.add_argument("--seed", type=int, default=config.SEED)
+    ap.add_argument("--keep-near-dup-leakage", action="store_true",
+                    help="do NOT prune train/val images that near-duplicate a same-label test image")
     a = ap.parse_args()
     if not a.source.is_dir():
         sys.exit(f"ERROR: {a.source} does not exist. No dataset is bundled; see DATASET.md.")
@@ -60,6 +63,15 @@ def main():
         tr_groups = set(df.loc[df["split"] == "train", "group"])
         te_groups = set(df.loc[df["split"] == "test", "group"])
         log["near_duplicate_groups_spanning_official_train_and_test"] = int(len(tr_groups & te_groups))
+        if not a.keep_near_dup_leakage:
+            # Never touch the test set; drop train/val images that share a near-duplicate group
+            # AND the same label with a test image. Cross-label matches are left (likely hash collisions).
+            test_keys = set(map(tuple, df.loc[df["split"] == "test", ["group", "label_id"]].to_numpy()))
+            leak = (df["split"] != "test") & pd.Series(
+                [(g, l) in test_keys for g, l in zip(df["group"], df["label_id"])], index=df.index)
+            log["n_train_val_removed_as_near_duplicates_of_test"] = int(leak.sum())
+            df = df[~leak].copy()
+            strategy += "; train/val images with a same-label near-duplicate (dHash<=4) in test were removed"
     else:
         df["split"] = grouped_stratified_split(df, a.seed)
         strategy = ("7-fold StratifiedGroupKFold (1 test, 1 val, 5 train; ~70/15/15) grouped by "
