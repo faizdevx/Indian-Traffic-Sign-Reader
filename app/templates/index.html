@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Indian Traffic Sign Reader</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 640px; margin: 2rem auto; padding: 0 1rem; color: #222; }
+  fieldset { border: 1px solid #ccc; padding: 1rem; }
+  img#preview { max-width: 100%; max-height: 240px; margin-top: 1rem; display: none; }
+  .row { margin: .6rem 0; }
+  table { border-collapse: collapse; width: 100%; margin-top: .5rem; }
+  td, th { border-bottom: 1px solid #ddd; padding: .3rem .5rem; text-align: left; }
+  .err { color: #b00020; }
+  small { color: #555; }
+</style>
+</head>
+<body>
+<h1>Indian Traffic Sign Reader</h1>
+<form id="f">
+  <fieldset>
+    <div class="row"><input type="file" id="file" name="file" accept="image/jpeg,image/png,image/bmp,image/webp" required></div>
+    <div class="row"><label>Model
+      <select name="model" id="model">
+        {% for m in models %}<option value="{{ m }}" {% if m == 'resnet18' %}selected{% endif %}>{{ 'ResNet18' if m == 'resnet18' else 'CNN (from scratch)' }}</option>{% endfor %}
+      </select></label></div>
+    <button type="submit">Classify</button>
+    <img id="preview" alt="preview">
+  </fieldset>
+</form>
+<div id="out"></div>
+<p><small>Research/portfolio classifier. Confidence is the model's softmax probability, not a guarantee of correctness. Not for safety-critical use.</small></p>
+<script>
+const f = document.getElementById('f'), out = document.getElementById('out'), prev = document.getElementById('preview');
+document.getElementById('file').addEventListener('change', e => {
+  const file = e.target.files[0];
+  if (file) { prev.src = URL.createObjectURL(file); prev.style.display = 'block'; }
+});
+f.addEventListener('submit', async e => {
+  e.preventDefault();
+  out.textContent = 'Running...';
+  const r = await fetch('/predict', { method: 'POST', body: new FormData(f) });
+  const j = await r.json();
+  if (!r.ok) { out.innerHTML = '<p class="err"></p>'; out.firstChild.textContent = 'Error ' + r.status + ': ' + (j.detail || 'request failed'); return; }
+  const esc = s => { const d = document.createElement('div'); d.textContent = s; return d.innerHTML; };
+  let h = `<h2>${esc(j.prediction)}</h2><p>Confidence (softmax): ${j.confidence.toFixed(3)}`;
+  if (j.calibrated_confidence !== null) h += ` &middot; temperature-scaled: ${j.calibrated_confidence.toFixed(3)}`;
+  h += `<br><small>${j.model} &middot; ${j.latency_ms.toFixed(1)} ms</small></p><table><tr><th>#</th><th>Class</th><th>Probability</th></tr>`;
+  j.top_k.forEach((t, i) => h += `<tr><td>${i + 1}</td><td>${esc(t.label)}</td><td>${t.probability.toFixed(3)}</td></tr>`);
+  out.innerHTML = h + '</table>';
+});
+</script>
+</body>
+</html>

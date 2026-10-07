@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+.env
+# dataset images and derived artifacts are never committed
+data/raw/*
+data/interim/*
+data/processed/*
+!data/*/.gitkeep
+# checkpoints are large; regenerate with the training scripts
+models/*
+!models/.gitkeep
