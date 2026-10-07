@@ -1,0 +1,15 @@
+[project]
+name = "indian-traffic-sign-reader"
+version = "0.1.0"
+description = "PyTorch-based Indian traffic sign classification benchmark comparing a CNN trained from scratch against ResNet18 transfer learning."
+requires-python = ">=3.11"
+
+[tool.setuptools]
+packages = ["src", "app"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-m 'not integration'"
+markers = [
+    "integration: needs the real dataset under data/raw (skipped by default; run with `pytest -m integration`)",
+]
