@@ -34,8 +34,8 @@ def evaluate_one(label, ckpt_path, manifest, root, device):
     tf = get_eval_transform(ckpt["image_size"])
     val_df = manifest[manifest["split"] == "val"]
     test_df = manifest[manifest["split"] == "test"].reset_index(drop=True)
-    vl, vy = collect_logits(model, make_loader(val_df, root, tf, 64, False), device)
-    tl, ty = collect_logits(model, make_loader(test_df, root, tf, 64, False), device)
+    vl, vy = collect_logits(model, make_loader(val_df, root, tf, 64, False, decode_size=ckpt['image_size']), device)
+    tl, ty = collect_logits(model, make_loader(test_df, root, tf, 64, False, decode_size=ckpt['image_size']), device)
     temp = fit_temperature(vl, vy)
     p_raw, p_cal = softmax_np(tl), softmax_np(tl, temp)
     m = classification_metrics(p_raw, ty, names)

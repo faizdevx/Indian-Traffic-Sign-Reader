@@ -1,0 +1,2141 @@
+{
+  "models": [
+    {
+      "model": "cnn",
+      "checkpoint": "/home/user/Indian-Traffic-Sign-Reader/models/cnn_best.pt",
+      "arch": "cnn",
+      "mode": null,
+      "pretrained": false,
+      "params": {
+        "total": 410741,
+        "trainable": 410741
+      },
+      "test_metrics": {
+        "n_samples": 1192,
+        "accuracy": 0.3674496644295302,
+        "top1_accuracy": 0.3674496644295302,
+        "top3_accuracy": 0.5981543624161074,
+        "macro_precision": 0.31764662547154493,
+        "macro_recall": 0.3197013601033306,
+        "macro_f1": 0.27908142184547585,
+        "weighted_f1": 0.36043554454444154,
+        "per_class": [
+          {
+            "class": "ALL_MOTOR_VEHICLE_PROHIBITED",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 5
+          },
+          {
+            "class": "AXLE_LOAD_LIMIT",
+            "precision": 0.2222222222222222,
+            "recall": 0.5,
+            "f1": 0.3076923076923077,
+            "support": 4
+          },
+          {
+            "class": "BARRIER_AHEAD",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 2
+          },
+          {
+            "class": "BULLOCK_AND_HANDCART_PROHIBITED",
+            "precision": 0.5,
+            "recall": 0.5,
+            "f1": 0.5,
+            "support": 2
+          },
+          {
+            "class": "BULLOCK_PROHIBITED",
+            "precision": 0.2857142857142857,
+            "recall": 0.8,
+            "f1": 0.42105263157894735,
+            "support": 5
+          },
+          {
+            "class": "CATTLE",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 11
+          },
+          {
+            "class": "COMPULSARY_AHEAD",
+            "precision": 0.07142857142857142,
+            "recall": 0.42857142857142855,
+            "f1": 0.12244897959183673,
+            "support": 7
+          },
+          {
+            "class": "COMPULSARY_AHEAD_OR_TURN_LEFT",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 4
+          },
+          {
+            "class": "COMPULSARY_AHEAD_OR_TURN_RIGHT",
+            "precision": 0.5,
+            "recall": 0.18181818181818182,
+            "f1": 0.26666666666666666,
+            "support": 11
+          },
+          {
+            "class": "COMPULSARY_CYCLE_TRACK",
+            "precision": 0.3333333333333333,
+            "recall": 0.25,
+            "f1": 0.2857142857142857,
+            "support": 4
+          },
+          {
+            "class": "COMPULSARY_KEEP_LEFT",
+            "precision": 0.5,
+            "recall": 0.26666666666666666,
+            "f1": 0.34782608695652173,
+            "support": 15
+          },
+          {
+            "class": "COMPULSARY_KEEP_RIGHT",
+            "precision": 0.1,
+            "recall": 0.09090909090909091,
+            "f1": 0.09523809523809523,
+            "support": 11
+          },
+          {
+            "class": "COMPULSARY_MINIMUM_SPEED",
+            "precision": 0.3333333333333333,
+            "recall": 0.25,
+            "f1": 0.2857142857142857,
+            "support": 8
+          },
+          {
+            "class": "COMPULSARY_SOUND_HORN",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 12
+          },
+          {
+            "class": "COMPULSARY_TURN_LEFT",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 12
+          },
+          {
+            "class": "COMPULSARY_TURN_LEFT_AHEAD",
+            "precision": 0.2857142857142857,
+            "recall": 0.5,
+            "f1": 0.36363636363636365,
+            "support": 4
+          },
+          {
+            "class": "COMPULSARY_TURN_RIGHT",
+            "precision": 0.3333333333333333,
+            "recall": 0.5,
+            "f1": 0.4,
+            "support": 2
+          },
+          {
+            "class": "COMPULSARY_TURN_RIGHT_AHEAD",
+            "precision": 0.1,
+            "recall": 0.25,
+            "f1": 0.14285714285714285,
+            "support": 4
+          },
+          {
+            "class": "CROSS_ROAD",
+            "precision": 0.6666666666666666,
+            "recall": 0.5,
+            "f1": 0.5714285714285714,
+            "support": 32
+          },
+          {
+            "class": "CYCLE_CROSSING",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 11
+          },
+          {
+            "class": "CYCLE_PROHIBITED",
+            "precision": 0.46153846153846156,
+            "recall": 0.75,
+            "f1": 0.5714285714285714,
+            "support": 8
+          },
+          {
+            "class": "DANGEROUS_DIP",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 4
+          },
+          {
+            "class": "DIRECTION",
+            "precision": 0.25,
+            "recall": 1.0,
+            "f1": 0.4,
+            "support": 1
+          },
+          {
+            "class": "FALLING_ROCKS",
+            "precision": 0.6,
+            "recall": 0.375,
+            "f1": 0.46153846153846156,
+            "support": 8
+          },
+          {
+            "class": "FERRY",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1
+          },
+          {
+            "class": "GAP_IN_MEDIAN",
+            "precision": 0.75,
+            "recall": 0.16666666666666666,
+            "f1": 0.2727272727272727,
+            "support": 18
+          },
+          {
+            "class": "GIVE_WAY",
+            "precision": 0.10344827586206896,
+            "recall": 0.1875,
+            "f1": 0.13333333333333333,
+            "support": 16
+          },
+          {
+            "class": "GUARDED_LEVEL_CROSSING",
+            "precision": 0.14285714285714285,
+            "recall": 0.3333333333333333,
+            "f1": 0.2,
+            "support": 3
+          },
+          {
+            "class": "HANDCART_PROHIBITED",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 2
+          },
+          {
+            "class": "HEIGHT_LIMIT",
+            "precision": 0.25,
+            "recall": 0.125,
+            "f1": 0.16666666666666666,
+            "support": 8
+          },
+          {
+            "class": "HORN_PROHIBITED",
+            "precision": 0.45454545454545453,
+            "recall": 0.3125,
+            "f1": 0.37037037037037035,
+            "support": 16
+          },
+          {
+            "class": "HUMP_OR_ROUGH_ROAD",
+            "precision": 0.2857142857142857,
+            "recall": 0.125,
+            "f1": 0.17391304347826086,
+            "support": 16
+          },
+          {
+            "class": "LEFT_HAIR_PIN_BEND",
+            "precision": 0.125,
+            "recall": 0.3333333333333333,
+            "f1": 0.18181818181818182,
+            "support": 3
+          },
+          {
+            "class": "LEFT_HAND_CURVE",
+            "precision": 0.09090909090909091,
+            "recall": 0.16666666666666666,
+            "f1": 0.11764705882352941,
+            "support": 6
+          },
+          {
+            "class": "LEFT_REVERSE_BEND",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 7
+          },
+          {
+            "class": "LEFT_TURN_PROHIBITED",
+            "precision": 0.475,
+            "recall": 0.6551724137931034,
+            "f1": 0.5507246376811594,
+            "support": 29
+          },
+          {
+            "class": "LENGTH_LIMIT",
+            "precision": 1.0,
+            "recall": 0.6,
+            "f1": 0.75,
+            "support": 5
+          },
+          {
+            "class": "LOAD_LIMIT",
+            "precision": 0.3333333333333333,
+            "recall": 0.3333333333333333,
+            "f1": 0.3333333333333333,
+            "support": 3
+          },
+          {
+            "class": "LOOSE_GRAVEL",
+            "precision": 0.25,
+            "recall": 0.125,
+            "f1": 0.16666666666666666,
+            "support": 8
+          },
+          {
+            "class": "MEN_AT_WORK",
+            "precision": 0.11764705882352941,
+            "recall": 0.375,
+            "f1": 0.1791044776119403,
+            "support": 16
+          },
+          {
+            "class": "NARROW_BRIDGE",
+            "precision": 0.14285714285714285,
+            "recall": 0.25,
+            "f1": 0.18181818181818182,
+            "support": 4
+          },
+          {
+            "class": "NARROW_ROAD_AHEAD",
+            "precision": 0.6666666666666666,
+            "recall": 0.5,
+            "f1": 0.5714285714285714,
+            "support": 8
+          },
+          {
+            "class": "NO_ENTRY",
+            "precision": 0.7407407407407407,
+            "recall": 0.8333333333333334,
+            "f1": 0.7843137254901961,
+            "support": 48
+          },
+          {
+            "class": "NO_PARKING",
+            "precision": 0.875,
+            "recall": 0.5,
+            "f1": 0.6363636363636364,
+            "support": 14
+          },
+          {
+            "class": "NO_STOPPING_OR_STANDING",
+            "precision": 0.9054054054054054,
+            "recall": 0.9178082191780822,
+            "f1": 0.9115646258503401,
+            "support": 73
+          },
+          {
+            "class": "OVERTAKING_PROHIBITED",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 9
+          },
+          {
+            "class": "PASS_EITHER_SIDE",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 8
+          },
+          {
+            "class": "PEDESTRIAN_CROSSING",
+            "precision": 0.6428571428571429,
+            "recall": 0.7297297297297297,
+            "f1": 0.6835443037974683,
+            "support": 37
+          },
+          {
+            "class": "PEDESTRIAN_PROHIBITED",
+            "precision": 0.75,
+            "recall": 0.2727272727272727,
+            "f1": 0.4,
+            "support": 11
+          },
+          {
+            "class": "PRIORITY_FOR_ONCOMING_VEHICLES",
+            "precision": 0.5,
+            "recall": 0.2,
+            "f1": 0.2857142857142857,
+            "support": 5
+          },
+          {
+            "class": "QUAY_SIDE_OR_RIVER_BANK",
+            "precision": 1.0,
+            "recall": 0.26666666666666666,
+            "f1": 0.42105263157894735,
+            "support": 15
+          },
+          {
+            "class": "RESTRICTION_ENDS",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 3
+          },
+          {
+            "class": "RIGHT_HAIR_PIN_BEND",
+            "precision": 0.07142857142857142,
+            "recall": 0.2,
+            "f1": 0.10526315789473684,
+            "support": 5
+          },
+          {
+            "class": "RIGHT_HAND_CURVE",
+            "precision": 0.18181818181818182,
+            "recall": 0.3333333333333333,
+            "f1": 0.23529411764705882,
+            "support": 6
+          },
+          {
+            "class": "RIGHT_REVERSE_BEND",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 4
+          },
+          {
+            "class": "RIGHT_TURN_PROHIBITED",
+            "precision": 0.2857142857142857,
+            "recall": 0.5,
+            "f1": 0.36363636363636365,
+            "support": 8
+          },
+          {
+            "class": "ROAD_WIDENS_AHEAD",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 3
+          },
+          {
+            "class": "ROUNDABOUT",
+            "precision": 0.5,
+            "recall": 0.058823529411764705,
+            "f1": 0.10526315789473684,
+            "support": 17
+          },
+          {
+            "class": "SCHOOL_AHEAD",
+            "precision": 0.5714285714285714,
+            "recall": 0.5714285714285714,
+            "f1": 0.5714285714285714,
+            "support": 14
+          },
+          {
+            "class": "SIDE_ROAD_LEFT",
+            "precision": 0.5,
+            "recall": 0.4166666666666667,
+            "f1": 0.45454545454545453,
+            "support": 12
+          },
+          {
+            "class": "SIDE_ROAD_RIGHT",
+            "precision": 0.15,
+            "recall": 0.75,
+            "f1": 0.25,
+            "support": 4
+          },
+          {
+            "class": "SLIPPERY_ROAD",
+            "precision": 1.0,
+            "recall": 0.07692307692307693,
+            "f1": 0.14285714285714285,
+            "support": 13
+          },
+          {
+            "class": "SPEED_LIMIT_15",
+            "precision": 0.0625,
+            "recall": 0.1,
+            "f1": 0.07692307692307693,
+            "support": 10
+          },
+          {
+            "class": "SPEED_LIMIT_20",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 3
+          },
+          {
+            "class": "SPEED_LIMIT_30",
+            "precision": 0.3684210526315789,
+            "recall": 0.175,
+            "f1": 0.23728813559322035,
+            "support": 80
+          },
+          {
+            "class": "SPEED_LIMIT_40",
+            "precision": 0.36363636363636365,
+            "recall": 0.4444444444444444,
+            "f1": 0.4,
+            "support": 54
+          },
+          {
+            "class": "SPEED_LIMIT_5",
+            "precision": 0.2826086956521739,
+            "recall": 0.52,
+            "f1": 0.36619718309859156,
+            "support": 25
+          },
+          {
+            "class": "SPEED_LIMIT_50",
+            "precision": 0.35,
+            "recall": 0.1111111111111111,
+            "f1": 0.1686746987951807,
+            "support": 63
+          },
+          {
+            "class": "SPEED_LIMIT_60",
+            "precision": 0.39285714285714285,
+            "recall": 0.3548387096774194,
+            "f1": 0.3728813559322034,
+            "support": 62
+          },
+          {
+            "class": "SPEED_LIMIT_70",
+            "precision": 0.30434782608695654,
+            "recall": 0.1346153846153846,
+            "f1": 0.18666666666666668,
+            "support": 52
+          },
+          {
+            "class": "SPEED_LIMIT_80",
+            "precision": 0.4,
+            "recall": 0.15625,
+            "f1": 0.2247191011235955,
+            "support": 64
+          },
+          {
+            "class": "STAGGERED_INTERSECTION",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 6
+          },
+          {
+            "class": "STEEP_ASCENT",
+            "precision": 0.15,
+            "recall": 0.6,
+            "f1": 0.24,
+            "support": 5
+          },
+          {
+            "class": "STEEP_DESCENT",
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666,
+            "support": 3
+          },
+          {
+            "class": "STOP",
+            "precision": 0.2641509433962264,
+            "recall": 0.875,
+            "f1": 0.4057971014492754,
+            "support": 16
+          },
+          {
+            "class": "STRAIGHT_PROHIBITED",
+            "precision": 0.041666666666666664,
+            "recall": 0.1,
+            "f1": 0.058823529411764705,
+            "support": 10
+          },
+          {
+            "class": "TONGA_PROHIBITED",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 2
+          },
+          {
+            "class": "TRAFFIC_SIGNAL",
+            "precision": 0.6666666666666666,
+            "recall": 1.0,
+            "f1": 0.8,
+            "support": 4
+          },
+          {
+            "class": "TRUCK_PROHIBITED",
+            "precision": 0.14285714285714285,
+            "recall": 0.16666666666666666,
+            "f1": 0.15384615384615385,
+            "support": 6
+          },
+          {
+            "class": "TURN_RIGHT",
+            "precision": 0.631578947368421,
+            "recall": 0.8,
+            "f1": 0.7058823529411765,
+            "support": 30
+          },
+          {
+            "class": "T_INTERSECTION",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 4
+          },
+          {
+            "class": "UNGUARDED_LEVEL_CROSSING",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1
+          },
+          {
+            "class": "U_TURN_PROHIBITED",
+            "precision": 0.4444444444444444,
+            "recall": 0.3333333333333333,
+            "f1": 0.38095238095238093,
+            "support": 12
+          },
+          {
+            "class": "WIDTH_LIMIT",
+            "precision": 0.42857142857142855,
+            "recall": 0.5,
+            "f1": 0.46153846153846156,
+            "support": 6
+          },
+          {
+            "class": "Y_INTERSECTION",
+            "precision": 0.8,
+            "recall": 0.4444444444444444,
+            "f1": 0.5714285714285714,
+            "support": 9
+          }
+        ]
+      },
+      "worst_classes_by_f1": [
+        {
+          "class": "COMPULSARY_SOUND_HORN",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 12
+        },
+        {
+          "class": "COMPULSARY_TURN_LEFT",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 12
+        },
+        {
+          "class": "CATTLE",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 11
+        },
+        {
+          "class": "CYCLE_CROSSING",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 11
+        },
+        {
+          "class": "OVERTAKING_PROHIBITED",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 9
+        },
+        {
+          "class": "PASS_EITHER_SIDE",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 8
+        },
+        {
+          "class": "LEFT_REVERSE_BEND",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 7
+        },
+        {
+          "class": "STAGGERED_INTERSECTION",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        {
+          "class": "ALL_MOTOR_VEHICLE_PROHIBITED",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 5
+        },
+        {
+          "class": "COMPULSARY_AHEAD_OR_TURN_LEFT",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 4
+        }
+      ],
+      "calibration": {
+        "temperature": 0.7796687603275843,
+        "fitted_on": "validation",
+        "ece_raw": 0.09118258280542074,
+        "ece_temperature_scaled": 0.03433257277317394
+      },
+      "latency_cpu": {
+        "mean_ms": 2.7313828199930867,
+        "median_ms": 2.1194025000568217,
+        "p95_ms": 4.931543399970906,
+        "warmup": 10,
+        "runs": 50
+      },
+      "latency_gpu": "not measured (no GPU available)",
+      "environment": {
+        "python": "3.13.16",
+        "torch": "2.14.1+cu130",
+        "device": "cpu",
+        "cuda_available": false,
+        "gpu_name": null,
+        "platform": "Linux-6.18.44-fc-v77-x86_64-with-glibc2.39"
+      }
+    },
+    {
+      "model": "resnet18_finetune",
+      "checkpoint": "/home/user/Indian-Traffic-Sign-Reader/models/resnet18_finetune_best.pt",
+      "arch": "resnet18",
+      "mode": "finetune",
+      "pretrained": true,
+      "params": {
+        "total": 11220117,
+        "trainable": 11220117
+      },
+      "test_metrics": {
+        "n_samples": 1192,
+        "accuracy": 0.8783557046979866,
+        "top1_accuracy": 0.8783557046979866,
+        "top3_accuracy": 0.9496644295302014,
+        "macro_precision": 0.8384811491405315,
+        "macro_recall": 0.8212506130978197,
+        "macro_f1": 0.8110941379461015,
+        "weighted_f1": 0.875750529617825,
+        "per_class": [
+          {
+            "class": "ALL_MOTOR_VEHICLE_PROHIBITED",
+            "precision": 1.0,
+            "recall": 0.8,
+            "f1": 0.8888888888888888,
+            "support": 5
+          },
+          {
+            "class": "AXLE_LOAD_LIMIT",
+            "precision": 0.8,
+            "recall": 1.0,
+            "f1": 0.8888888888888888,
+            "support": 4
+          },
+          {
+            "class": "BARRIER_AHEAD",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          {
+            "class": "BULLOCK_AND_HANDCART_PROHIBITED",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          {
+            "class": "BULLOCK_PROHIBITED",
+            "precision": 0.7142857142857143,
+            "recall": 1.0,
+            "f1": 0.8333333333333334,
+            "support": 5
+          },
+          {
+            "class": "CATTLE",
+            "precision": 0.8333333333333334,
+            "recall": 0.9090909090909091,
+            "f1": 0.8695652173913043,
+            "support": 11
+          },
+          {
+            "class": "COMPULSARY_AHEAD",
+            "precision": 0.3333333333333333,
+            "recall": 0.8571428571428571,
+            "f1": 0.48,
+            "support": 7
+          },
+          {
+            "class": "COMPULSARY_AHEAD_OR_TURN_LEFT",
+            "precision": 0.6,
+            "recall": 0.75,
+            "f1": 0.6666666666666666,
+            "support": 4
+          },
+          {
+            "class": "COMPULSARY_AHEAD_OR_TURN_RIGHT",
+            "precision": 0.75,
+            "recall": 0.2727272727272727,
+            "f1": 0.4,
+            "support": 11
+          },
+          {
+            "class": "COMPULSARY_CYCLE_TRACK",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 4
+          },
+          {
+            "class": "COMPULSARY_KEEP_LEFT",
+            "precision": 0.8,
+            "recall": 0.5333333333333333,
+            "f1": 0.64,
+            "support": 15
+          },
+          {
+            "class": "COMPULSARY_KEEP_RIGHT",
+            "precision": 0.6875,
+            "recall": 1.0,
+            "f1": 0.8148148148148148,
+            "support": 11
+          },
+          {
+            "class": "COMPULSARY_MINIMUM_SPEED",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8
+          },
+          {
+            "class": "COMPULSARY_SOUND_HORN",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12
+          },
+          {
+            "class": "COMPULSARY_TURN_LEFT",
+            "precision": 0.7142857142857143,
+            "recall": 0.4166666666666667,
+            "f1": 0.5263157894736842,
+            "support": 12
+          },
+          {
+            "class": "COMPULSARY_TURN_LEFT_AHEAD",
+            "precision": 0.8,
+            "recall": 1.0,
+            "f1": 0.8888888888888888,
+            "support": 4
+          },
+          {
+            "class": "COMPULSARY_TURN_RIGHT",
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666,
+            "support": 2
+          },
+          {
+            "class": "COMPULSARY_TURN_RIGHT_AHEAD",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 4
+          },
+          {
+            "class": "CROSS_ROAD",
+            "precision": 0.9411764705882353,
+            "recall": 0.5,
+            "f1": 0.6530612244897959,
+            "support": 32
+          },
+          {
+            "class": "CYCLE_CROSSING",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 11
+          },
+          {
+            "class": "CYCLE_PROHIBITED",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8
+          },
+          {
+            "class": "DANGEROUS_DIP",
+            "precision": 0.5714285714285714,
+            "recall": 1.0,
+            "f1": 0.7272727272727273,
+            "support": 4
+          },
+          {
+            "class": "DIRECTION",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 1
+          },
+          {
+            "class": "FALLING_ROCKS",
+            "precision": 0.75,
+            "recall": 0.75,
+            "f1": 0.75,
+            "support": 8
+          },
+          {
+            "class": "FERRY",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1
+          },
+          {
+            "class": "GAP_IN_MEDIAN",
+            "precision": 0.8888888888888888,
+            "recall": 0.8888888888888888,
+            "f1": 0.8888888888888888,
+            "support": 18
+          },
+          {
+            "class": "GIVE_WAY",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 16
+          },
+          {
+            "class": "GUARDED_LEVEL_CROSSING",
+            "precision": 1.0,
+            "recall": 0.6666666666666666,
+            "f1": 0.8,
+            "support": 3
+          },
+          {
+            "class": "HANDCART_PROHIBITED",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 2
+          },
+          {
+            "class": "HEIGHT_LIMIT",
+            "precision": 1.0,
+            "recall": 0.75,
+            "f1": 0.8571428571428571,
+            "support": 8
+          },
+          {
+            "class": "HORN_PROHIBITED",
+            "precision": 0.875,
+            "recall": 0.875,
+            "f1": 0.875,
+            "support": 16
+          },
+          {
+            "class": "HUMP_OR_ROUGH_ROAD",
+            "precision": 1.0,
+            "recall": 0.5625,
+            "f1": 0.72,
+            "support": 16
+          },
+          {
+            "class": "LEFT_HAIR_PIN_BEND",
+            "precision": 0.5,
+            "recall": 0.6666666666666666,
+            "f1": 0.5714285714285714,
+            "support": 3
+          },
+          {
+            "class": "LEFT_HAND_CURVE",
+            "precision": 0.8571428571428571,
+            "recall": 1.0,
+            "f1": 0.9230769230769231,
+            "support": 6
+          },
+          {
+            "class": "LEFT_REVERSE_BEND",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 7
+          },
+          {
+            "class": "LEFT_TURN_PROHIBITED",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 29
+          },
+          {
+            "class": "LENGTH_LIMIT",
+            "precision": 0.8333333333333334,
+            "recall": 1.0,
+            "f1": 0.9090909090909091,
+            "support": 5
+          },
+          {
+            "class": "LOAD_LIMIT",
+            "precision": 0.6,
+            "recall": 1.0,
+            "f1": 0.75,
+            "support": 3
+          },
+          {
+            "class": "LOOSE_GRAVEL",
+            "precision": 1.0,
+            "recall": 0.625,
+            "f1": 0.7692307692307693,
+            "support": 8
+          },
+          {
+            "class": "MEN_AT_WORK",
+            "precision": 0.6956521739130435,
+            "recall": 1.0,
+            "f1": 0.8205128205128205,
+            "support": 16
+          },
+          {
+            "class": "NARROW_BRIDGE",
+            "precision": 0.6,
+            "recall": 0.75,
+            "f1": 0.6666666666666666,
+            "support": 4
+          },
+          {
+            "class": "NARROW_ROAD_AHEAD",
+            "precision": 0.8,
+            "recall": 1.0,
+            "f1": 0.8888888888888888,
+            "support": 8
+          },
+          {
+            "class": "NO_ENTRY",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 48
+          },
+          {
+            "class": "NO_PARKING",
+            "precision": 0.8666666666666667,
+            "recall": 0.9285714285714286,
+            "f1": 0.896551724137931,
+            "support": 14
+          },
+          {
+            "class": "NO_STOPPING_OR_STANDING",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 73
+          },
+          {
+            "class": "OVERTAKING_PROHIBITED",
+            "precision": 0.7272727272727273,
+            "recall": 0.8888888888888888,
+            "f1": 0.8,
+            "support": 9
+          },
+          {
+            "class": "PASS_EITHER_SIDE",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8
+          },
+          {
+            "class": "PEDESTRIAN_CROSSING",
+            "precision": 0.9736842105263158,
+            "recall": 1.0,
+            "f1": 0.9866666666666667,
+            "support": 37
+          },
+          {
+            "class": "PEDESTRIAN_PROHIBITED",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 11
+          },
+          {
+            "class": "PRIORITY_FOR_ONCOMING_VEHICLES",
+            "precision": 0.7142857142857143,
+            "recall": 1.0,
+            "f1": 0.8333333333333334,
+            "support": 5
+          },
+          {
+            "class": "QUAY_SIDE_OR_RIVER_BANK",
+            "precision": 0.75,
+            "recall": 1.0,
+            "f1": 0.8571428571428571,
+            "support": 15
+          },
+          {
+            "class": "RESTRICTION_ENDS",
+            "precision": 0.75,
+            "recall": 1.0,
+            "f1": 0.8571428571428571,
+            "support": 3
+          },
+          {
+            "class": "RIGHT_HAIR_PIN_BEND",
+            "precision": 0.375,
+            "recall": 0.6,
+            "f1": 0.46153846153846156,
+            "support": 5
+          },
+          {
+            "class": "RIGHT_HAND_CURVE",
+            "precision": 1.0,
+            "recall": 0.6666666666666666,
+            "f1": 0.8,
+            "support": 6
+          },
+          {
+            "class": "RIGHT_REVERSE_BEND",
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666,
+            "support": 4
+          },
+          {
+            "class": "RIGHT_TURN_PROHIBITED",
+            "precision": 0.8888888888888888,
+            "recall": 1.0,
+            "f1": 0.9411764705882353,
+            "support": 8
+          },
+          {
+            "class": "ROAD_WIDENS_AHEAD",
+            "precision": 0.5,
+            "recall": 0.6666666666666666,
+            "f1": 0.5714285714285714,
+            "support": 3
+          },
+          {
+            "class": "ROUNDABOUT",
+            "precision": 0.8888888888888888,
+            "recall": 0.9411764705882353,
+            "f1": 0.9142857142857143,
+            "support": 17
+          },
+          {
+            "class": "SCHOOL_AHEAD",
+            "precision": 1.0,
+            "recall": 0.9285714285714286,
+            "f1": 0.9629629629629629,
+            "support": 14
+          },
+          {
+            "class": "SIDE_ROAD_LEFT",
+            "precision": 1.0,
+            "recall": 0.75,
+            "f1": 0.8571428571428571,
+            "support": 12
+          },
+          {
+            "class": "SIDE_ROAD_RIGHT",
+            "precision": 1.0,
+            "recall": 0.75,
+            "f1": 0.8571428571428571,
+            "support": 4
+          },
+          {
+            "class": "SLIPPERY_ROAD",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 13
+          },
+          {
+            "class": "SPEED_LIMIT_15",
+            "precision": 1.0,
+            "recall": 0.9,
+            "f1": 0.9473684210526315,
+            "support": 10
+          },
+          {
+            "class": "SPEED_LIMIT_20",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 3
+          },
+          {
+            "class": "SPEED_LIMIT_30",
+            "precision": 0.8390804597701149,
+            "recall": 0.9125,
+            "f1": 0.874251497005988,
+            "support": 80
+          },
+          {
+            "class": "SPEED_LIMIT_40",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 54
+          },
+          {
+            "class": "SPEED_LIMIT_5",
+            "precision": 1.0,
+            "recall": 0.96,
+            "f1": 0.9795918367346939,
+            "support": 25
+          },
+          {
+            "class": "SPEED_LIMIT_50",
+            "precision": 0.9245283018867925,
+            "recall": 0.7777777777777778,
+            "f1": 0.8448275862068966,
+            "support": 63
+          },
+          {
+            "class": "SPEED_LIMIT_60",
+            "precision": 0.9491525423728814,
+            "recall": 0.9032258064516129,
+            "f1": 0.9256198347107438,
+            "support": 62
+          },
+          {
+            "class": "SPEED_LIMIT_70",
+            "precision": 0.8518518518518519,
+            "recall": 0.8846153846153846,
+            "f1": 0.8679245283018868,
+            "support": 52
+          },
+          {
+            "class": "SPEED_LIMIT_80",
+            "precision": 0.7808219178082192,
+            "recall": 0.890625,
+            "f1": 0.8321167883211679,
+            "support": 64
+          },
+          {
+            "class": "STAGGERED_INTERSECTION",
+            "precision": 0.5714285714285714,
+            "recall": 0.6666666666666666,
+            "f1": 0.6153846153846154,
+            "support": 6
+          },
+          {
+            "class": "STEEP_ASCENT",
+            "precision": 1.0,
+            "recall": 0.8,
+            "f1": 0.8888888888888888,
+            "support": 5
+          },
+          {
+            "class": "STEEP_DESCENT",
+            "precision": 1.0,
+            "recall": 0.6666666666666666,
+            "f1": 0.8,
+            "support": 3
+          },
+          {
+            "class": "STOP",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 16
+          },
+          {
+            "class": "STRAIGHT_PROHIBITED",
+            "precision": 1.0,
+            "recall": 0.7,
+            "f1": 0.8235294117647058,
+            "support": 10
+          },
+          {
+            "class": "TONGA_PROHIBITED",
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666,
+            "support": 2
+          },
+          {
+            "class": "TRAFFIC_SIGNAL",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 4
+          },
+          {
+            "class": "TRUCK_PROHIBITED",
+            "precision": 1.0,
+            "recall": 0.6666666666666666,
+            "f1": 0.8,
+            "support": 6
+          },
+          {
+            "class": "TURN_RIGHT",
+            "precision": 0.9354838709677419,
+            "recall": 0.9666666666666667,
+            "f1": 0.9508196721311475,
+            "support": 30
+          },
+          {
+            "class": "T_INTERSECTION",
+            "precision": 0.6,
+            "recall": 0.75,
+            "f1": 0.6666666666666666,
+            "support": 4
+          },
+          {
+            "class": "UNGUARDED_LEVEL_CROSSING",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 1
+          },
+          {
+            "class": "U_TURN_PROHIBITED",
+            "precision": 0.9090909090909091,
+            "recall": 0.8333333333333334,
+            "f1": 0.8695652173913043,
+            "support": 12
+          },
+          {
+            "class": "WIDTH_LIMIT",
+            "precision": 1.0,
+            "recall": 0.3333333333333333,
+            "f1": 0.5,
+            "support": 6
+          },
+          {
+            "class": "Y_INTERSECTION",
+            "precision": 0.5294117647058824,
+            "recall": 1.0,
+            "f1": 0.6923076923076923,
+            "support": 9
+          }
+        ]
+      },
+      "worst_classes_by_f1": [
+        {
+          "class": "SPEED_LIMIT_20",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 3
+        },
+        {
+          "class": "HANDCART_PROHIBITED",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 2
+        },
+        {
+          "class": "FERRY",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1
+        },
+        {
+          "class": "COMPULSARY_AHEAD_OR_TURN_RIGHT",
+          "precision": 0.75,
+          "recall": 0.2727272727272727,
+          "f1": 0.4,
+          "support": 11
+        },
+        {
+          "class": "RIGHT_HAIR_PIN_BEND",
+          "precision": 0.375,
+          "recall": 0.6,
+          "f1": 0.46153846153846156,
+          "support": 5
+        },
+        {
+          "class": "COMPULSARY_AHEAD",
+          "precision": 0.3333333333333333,
+          "recall": 0.8571428571428571,
+          "f1": 0.48,
+          "support": 7
+        },
+        {
+          "class": "WIDTH_LIMIT",
+          "precision": 1.0,
+          "recall": 0.3333333333333333,
+          "f1": 0.5,
+          "support": 6
+        },
+        {
+          "class": "COMPULSARY_TURN_LEFT",
+          "precision": 0.7142857142857143,
+          "recall": 0.4166666666666667,
+          "f1": 0.5263157894736842,
+          "support": 12
+        },
+        {
+          "class": "LEFT_HAIR_PIN_BEND",
+          "precision": 0.5,
+          "recall": 0.6666666666666666,
+          "f1": 0.5714285714285714,
+          "support": 3
+        },
+        {
+          "class": "ROAD_WIDENS_AHEAD",
+          "precision": 0.5,
+          "recall": 0.6666666666666666,
+          "f1": 0.5714285714285714,
+          "support": 3
+        }
+      ],
+      "calibration": {
+        "temperature": 1.0640306966889501,
+        "fitted_on": "validation",
+        "ece_raw": 0.03116033240002673,
+        "ece_temperature_scaled": 0.03023473760925686
+      },
+      "latency_cpu": {
+        "mean_ms": 6.130392220011345,
+        "median_ms": 5.964945999949123,
+        "p95_ms": 8.17378459973952,
+        "warmup": 10,
+        "runs": 50
+      },
+      "latency_gpu": "not measured (no GPU available)",
+      "environment": {
+        "python": "3.13.16",
+        "torch": "2.14.1+cu130",
+        "device": "cpu",
+        "cuda_available": false,
+        "gpu_name": null,
+        "platform": "Linux-6.18.44-fc-v77-x86_64-with-glibc2.39"
+      }
+    },
+    {
+      "model": "resnet18_frozen",
+      "checkpoint": "/home/user/Indian-Traffic-Sign-Reader/models/resnet18_frozen_best.pt",
+      "arch": "resnet18",
+      "mode": "frozen",
+      "pretrained": true,
+      "params": {
+        "total": 11220117,
+        "trainable": 11220117
+      },
+      "test_metrics": {
+        "n_samples": 1192,
+        "accuracy": 0.4815436241610738,
+        "top1_accuracy": 0.4815436241610738,
+        "top3_accuracy": 0.7130872483221476,
+        "macro_precision": 0.4075062856345266,
+        "macro_recall": 0.40065781440024484,
+        "macro_f1": 0.3738246500830807,
+        "weighted_f1": 0.4707196457339072,
+        "per_class": [
+          {
+            "class": "ALL_MOTOR_VEHICLE_PROHIBITED",
+            "precision": 0.5,
+            "recall": 0.4,
+            "f1": 0.4444444444444444,
+            "support": 5
+          },
+          {
+            "class": "AXLE_LOAD_LIMIT",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 4
+          },
+          {
+            "class": "BARRIER_AHEAD",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 2
+          },
+          {
+            "class": "BULLOCK_AND_HANDCART_PROHIBITED",
+            "precision": 0.2,
+            "recall": 0.5,
+            "f1": 0.2857142857142857,
+            "support": 2
+          },
+          {
+            "class": "BULLOCK_PROHIBITED",
+            "precision": 0.35714285714285715,
+            "recall": 1.0,
+            "f1": 0.5263157894736842,
+            "support": 5
+          },
+          {
+            "class": "CATTLE",
+            "precision": 0.19047619047619047,
+            "recall": 0.36363636363636365,
+            "f1": 0.25,
+            "support": 11
+          },
+          {
+            "class": "COMPULSARY_AHEAD",
+            "precision": 0.08333333333333333,
+            "recall": 0.42857142857142855,
+            "f1": 0.13953488372093023,
+            "support": 7
+          },
+          {
+            "class": "COMPULSARY_AHEAD_OR_TURN_LEFT",
+            "precision": 0.3333333333333333,
+            "recall": 0.5,
+            "f1": 0.4,
+            "support": 4
+          },
+          {
+            "class": "COMPULSARY_AHEAD_OR_TURN_RIGHT",
+            "precision": 0.4,
+            "recall": 0.18181818181818182,
+            "f1": 0.25,
+            "support": 11
+          },
+          {
+            "class": "COMPULSARY_CYCLE_TRACK",
+            "precision": 0.5,
+            "recall": 0.75,
+            "f1": 0.6,
+            "support": 4
+          },
+          {
+            "class": "COMPULSARY_KEEP_LEFT",
+            "precision": 0.3333333333333333,
+            "recall": 0.06666666666666667,
+            "f1": 0.1111111111111111,
+            "support": 15
+          },
+          {
+            "class": "COMPULSARY_KEEP_RIGHT",
+            "precision": 0.25,
+            "recall": 0.09090909090909091,
+            "f1": 0.13333333333333333,
+            "support": 11
+          },
+          {
+            "class": "COMPULSARY_MINIMUM_SPEED",
+            "precision": 0.7272727272727273,
+            "recall": 1.0,
+            "f1": 0.8421052631578947,
+            "support": 8
+          },
+          {
+            "class": "COMPULSARY_SOUND_HORN",
+            "precision": 0.6,
+            "recall": 0.75,
+            "f1": 0.6666666666666666,
+            "support": 12
+          },
+          {
+            "class": "COMPULSARY_TURN_LEFT",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 12
+          },
+          {
+            "class": "COMPULSARY_TURN_LEFT_AHEAD",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 4
+          },
+          {
+            "class": "COMPULSARY_TURN_RIGHT",
+            "precision": 0.5,
+            "recall": 0.5,
+            "f1": 0.5,
+            "support": 2
+          },
+          {
+            "class": "COMPULSARY_TURN_RIGHT_AHEAD",
+            "precision": 0.1111111111111111,
+            "recall": 0.25,
+            "f1": 0.15384615384615385,
+            "support": 4
+          },
+          {
+            "class": "CROSS_ROAD",
+            "precision": 0.6666666666666666,
+            "recall": 0.375,
+            "f1": 0.48,
+            "support": 32
+          },
+          {
+            "class": "CYCLE_CROSSING",
+            "precision": 0.19047619047619047,
+            "recall": 0.36363636363636365,
+            "f1": 0.25,
+            "support": 11
+          },
+          {
+            "class": "CYCLE_PROHIBITED",
+            "precision": 0.6363636363636364,
+            "recall": 0.875,
+            "f1": 0.7368421052631579,
+            "support": 8
+          },
+          {
+            "class": "DANGEROUS_DIP",
+            "precision": 1.0,
+            "recall": 0.25,
+            "f1": 0.4,
+            "support": 4
+          },
+          {
+            "class": "DIRECTION",
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 1
+          },
+          {
+            "class": "FALLING_ROCKS",
+            "precision": 0.2,
+            "recall": 0.125,
+            "f1": 0.15384615384615385,
+            "support": 8
+          },
+          {
+            "class": "FERRY",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1
+          },
+          {
+            "class": "GAP_IN_MEDIAN",
+            "precision": 0.8333333333333334,
+            "recall": 0.5555555555555556,
+            "f1": 0.6666666666666666,
+            "support": 18
+          },
+          {
+            "class": "GIVE_WAY",
+            "precision": 0.875,
+            "recall": 0.875,
+            "f1": 0.875,
+            "support": 16
+          },
+          {
+            "class": "GUARDED_LEVEL_CROSSING",
+            "precision": 0.16666666666666666,
+            "recall": 0.3333333333333333,
+            "f1": 0.2222222222222222,
+            "support": 3
+          },
+          {
+            "class": "HANDCART_PROHIBITED",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 2
+          },
+          {
+            "class": "HEIGHT_LIMIT",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 8
+          },
+          {
+            "class": "HORN_PROHIBITED",
+            "precision": 0.7272727272727273,
+            "recall": 0.5,
+            "f1": 0.5925925925925926,
+            "support": 16
+          },
+          {
+            "class": "HUMP_OR_ROUGH_ROAD",
+            "precision": 0.2857142857142857,
+            "recall": 0.125,
+            "f1": 0.17391304347826086,
+            "support": 16
+          },
+          {
+            "class": "LEFT_HAIR_PIN_BEND",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 3
+          },
+          {
+            "class": "LEFT_HAND_CURVE",
+            "precision": 0.3333333333333333,
+            "recall": 0.16666666666666666,
+            "f1": 0.2222222222222222,
+            "support": 6
+          },
+          {
+            "class": "LEFT_REVERSE_BEND",
+            "precision": 0.25,
+            "recall": 0.14285714285714285,
+            "f1": 0.18181818181818182,
+            "support": 7
+          },
+          {
+            "class": "LEFT_TURN_PROHIBITED",
+            "precision": 0.8095238095238095,
+            "recall": 0.5862068965517241,
+            "f1": 0.68,
+            "support": 29
+          },
+          {
+            "class": "LENGTH_LIMIT",
+            "precision": 0.21428571428571427,
+            "recall": 0.6,
+            "f1": 0.3157894736842105,
+            "support": 5
+          },
+          {
+            "class": "LOAD_LIMIT",
+            "precision": 0.3333333333333333,
+            "recall": 0.3333333333333333,
+            "f1": 0.3333333333333333,
+            "support": 3
+          },
+          {
+            "class": "LOOSE_GRAVEL",
+            "precision": 0.3125,
+            "recall": 0.625,
+            "f1": 0.4166666666666667,
+            "support": 8
+          },
+          {
+            "class": "MEN_AT_WORK",
+            "precision": 0.5384615384615384,
+            "recall": 0.875,
+            "f1": 0.6666666666666666,
+            "support": 16
+          },
+          {
+            "class": "NARROW_BRIDGE",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 4
+          },
+          {
+            "class": "NARROW_ROAD_AHEAD",
+            "precision": 0.4444444444444444,
+            "recall": 0.5,
+            "f1": 0.47058823529411764,
+            "support": 8
+          },
+          {
+            "class": "NO_ENTRY",
+            "precision": 0.9411764705882353,
+            "recall": 1.0,
+            "f1": 0.9696969696969697,
+            "support": 48
+          },
+          {
+            "class": "NO_PARKING",
+            "precision": 0.8888888888888888,
+            "recall": 0.5714285714285714,
+            "f1": 0.6956521739130435,
+            "support": 14
+          },
+          {
+            "class": "NO_STOPPING_OR_STANDING",
+            "precision": 1.0,
+            "recall": 0.9452054794520548,
+            "f1": 0.971830985915493,
+            "support": 73
+          },
+          {
+            "class": "OVERTAKING_PROHIBITED",
+            "precision": 0.4,
+            "recall": 0.4444444444444444,
+            "f1": 0.42105263157894735,
+            "support": 9
+          },
+          {
+            "class": "PASS_EITHER_SIDE",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 8
+          },
+          {
+            "class": "PEDESTRIAN_CROSSING",
+            "precision": 0.813953488372093,
+            "recall": 0.9459459459459459,
+            "f1": 0.875,
+            "support": 37
+          },
+          {
+            "class": "PEDESTRIAN_PROHIBITED",
+            "precision": 1.0,
+            "recall": 0.5454545454545454,
+            "f1": 0.7058823529411765,
+            "support": 11
+          },
+          {
+            "class": "PRIORITY_FOR_ONCOMING_VEHICLES",
+            "precision": 1.0,
+            "recall": 0.2,
+            "f1": 0.3333333333333333,
+            "support": 5
+          },
+          {
+            "class": "QUAY_SIDE_OR_RIVER_BANK",
+            "precision": 0.5,
+            "recall": 0.26666666666666666,
+            "f1": 0.34782608695652173,
+            "support": 15
+          },
+          {
+            "class": "RESTRICTION_ENDS",
+            "precision": 1.0,
+            "recall": 0.6666666666666666,
+            "f1": 0.8,
+            "support": 3
+          },
+          {
+            "class": "RIGHT_HAIR_PIN_BEND",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 5
+          },
+          {
+            "class": "RIGHT_HAND_CURVE",
+            "precision": 0.125,
+            "recall": 0.16666666666666666,
+            "f1": 0.14285714285714285,
+            "support": 6
+          },
+          {
+            "class": "RIGHT_REVERSE_BEND",
+            "precision": 0.5,
+            "recall": 0.25,
+            "f1": 0.3333333333333333,
+            "support": 4
+          },
+          {
+            "class": "RIGHT_TURN_PROHIBITED",
+            "precision": 0.6666666666666666,
+            "recall": 0.25,
+            "f1": 0.36363636363636365,
+            "support": 8
+          },
+          {
+            "class": "ROAD_WIDENS_AHEAD",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 3
+          },
+          {
+            "class": "ROUNDABOUT",
+            "precision": 0.2222222222222222,
+            "recall": 0.11764705882352941,
+            "f1": 0.15384615384615385,
+            "support": 17
+          },
+          {
+            "class": "SCHOOL_AHEAD",
+            "precision": 0.8461538461538461,
+            "recall": 0.7857142857142857,
+            "f1": 0.8148148148148148,
+            "support": 14
+          },
+          {
+            "class": "SIDE_ROAD_LEFT",
+            "precision": 0.6,
+            "recall": 0.75,
+            "f1": 0.6666666666666666,
+            "support": 12
+          },
+          {
+            "class": "SIDE_ROAD_RIGHT",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 4
+          },
+          {
+            "class": "SLIPPERY_ROAD",
+            "precision": 0.14285714285714285,
+            "recall": 0.23076923076923078,
+            "f1": 0.17647058823529413,
+            "support": 13
+          },
+          {
+            "class": "SPEED_LIMIT_15",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 10
+          },
+          {
+            "class": "SPEED_LIMIT_20",
+            "precision": 0.05263157894736842,
+            "recall": 0.3333333333333333,
+            "f1": 0.09090909090909091,
+            "support": 3
+          },
+          {
+            "class": "SPEED_LIMIT_30",
+            "precision": 0.6428571428571429,
+            "recall": 0.225,
+            "f1": 0.3333333333333333,
+            "support": 80
+          },
+          {
+            "class": "SPEED_LIMIT_40",
+            "precision": 0.547945205479452,
+            "recall": 0.7407407407407407,
+            "f1": 0.6299212598425197,
+            "support": 54
+          },
+          {
+            "class": "SPEED_LIMIT_5",
+            "precision": 0.6,
+            "recall": 0.96,
+            "f1": 0.7384615384615385,
+            "support": 25
+          },
+          {
+            "class": "SPEED_LIMIT_50",
+            "precision": 0.2222222222222222,
+            "recall": 0.2222222222222222,
+            "f1": 0.2222222222222222,
+            "support": 63
+          },
+          {
+            "class": "SPEED_LIMIT_60",
+            "precision": 0.3384615384615385,
+            "recall": 0.3548387096774194,
+            "f1": 0.3464566929133858,
+            "support": 62
+          },
+          {
+            "class": "SPEED_LIMIT_70",
+            "precision": 0.2857142857142857,
+            "recall": 0.5769230769230769,
+            "f1": 0.3821656050955414,
+            "support": 52
+          },
+          {
+            "class": "SPEED_LIMIT_80",
+            "precision": 0.36363636363636365,
+            "recall": 0.125,
+            "f1": 0.18604651162790697,
+            "support": 64
+          },
+          {
+            "class": "STAGGERED_INTERSECTION",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 6
+          },
+          {
+            "class": "STEEP_ASCENT",
+            "precision": 0.16666666666666666,
+            "recall": 0.4,
+            "f1": 0.23529411764705882,
+            "support": 5
+          },
+          {
+            "class": "STEEP_DESCENT",
+            "precision": 1.0,
+            "recall": 0.6666666666666666,
+            "f1": 0.8,
+            "support": 3
+          },
+          {
+            "class": "STOP",
+            "precision": 0.8823529411764706,
+            "recall": 0.9375,
+            "f1": 0.9090909090909091,
+            "support": 16
+          },
+          {
+            "class": "STRAIGHT_PROHIBITED",
+            "precision": 0.3,
+            "recall": 0.3,
+            "f1": 0.3,
+            "support": 10
+          },
+          {
+            "class": "TONGA_PROHIBITED",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 2
+          },
+          {
+            "class": "TRAFFIC_SIGNAL",
+            "precision": 0.6,
+            "recall": 0.75,
+            "f1": 0.6666666666666666,
+            "support": 4
+          },
+          {
+            "class": "TRUCK_PROHIBITED",
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 6
+          },
+          {
+            "class": "TURN_RIGHT",
+            "precision": 0.7241379310344828,
+            "recall": 0.7,
+            "f1": 0.711864406779661,
+            "support": 30
+          },
+          {
+            "class": "T_INTERSECTION",
+            "precision": 0.25,
+            "recall": 0.25,
+            "f1": 0.25,
+            "support": 4
+          },
+          {
+            "class": "UNGUARDED_LEVEL_CROSSING",
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666,
+            "support": 1
+          },
+          {
+            "class": "U_TURN_PROHIBITED",
+            "precision": 0.4444444444444444,
+            "recall": 0.3333333333333333,
+            "f1": 0.38095238095238093,
+            "support": 12
+          },
+          {
+            "class": "WIDTH_LIMIT",
+            "precision": 0.5,
+            "recall": 0.16666666666666666,
+            "f1": 0.25,
+            "support": 6
+          },
+          {
+            "class": "Y_INTERSECTION",
+            "precision": 0.6666666666666666,
+            "recall": 0.8888888888888888,
+            "f1": 0.7619047619047619,
+            "support": 9
+          }
+        ]
+      },
+      "worst_classes_by_f1": [
+        {
+          "class": "COMPULSARY_TURN_LEFT",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 12
+        },
+        {
+          "class": "SPEED_LIMIT_15",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 10
+        },
+        {
+          "class": "HEIGHT_LIMIT",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 8
+        },
+        {
+          "class": "PASS_EITHER_SIDE",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 8
+        },
+        {
+          "class": "STAGGERED_INTERSECTION",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        {
+          "class": "TRUCK_PROHIBITED",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        {
+          "class": "RIGHT_HAIR_PIN_BEND",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 5
+        },
+        {
+          "class": "AXLE_LOAD_LIMIT",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 4
+        },
+        {
+          "class": "COMPULSARY_TURN_LEFT_AHEAD",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 4
+        },
+        {
+          "class": "NARROW_BRIDGE",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 4
+        }
+      ],
+      "calibration": {
+        "temperature": 0.7004298820935786,
+        "fitted_on": "validation",
+        "ece_raw": 0.09293920651778277,
+        "ece_temperature_scaled": 0.07937374694785417
+      },
+      "latency_cpu": {
+        "mean_ms": 6.628187400019669,
+        "median_ms": 5.372689000068931,
+        "p95_ms": 13.120552949976624,
+        "warmup": 10,
+        "runs": 50
+      },
+      "latency_gpu": "not measured (no GPU available)",
+      "environment": {
+        "python": "3.13.16",
+        "torch": "2.14.1+cu130",
+        "device": "cpu",
+        "cuda_available": false,
+        "gpu_name": null,
+        "platform": "Linux-6.18.44-fc-v77-x86_64-with-glibc2.39"
+      }
+    }
+  ],
+  "latency_method": "batch=1, 10 warm-up + 50 timed forward passes, model only"
+}

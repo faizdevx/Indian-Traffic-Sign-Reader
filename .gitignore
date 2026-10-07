@@ -12,3 +12,6 @@ data/processed/*
 # checkpoints are large; regenerate with the training scripts
 models/*
 !models/.gitkeep
+
+# error-example grids embed dataset images (licence unverified); regenerate with evaluate_models.py
+reports/figures/error_examples_*.png

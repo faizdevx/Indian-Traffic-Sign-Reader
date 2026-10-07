@@ -32,7 +32,8 @@ def load_prepared(manifest_path: Path = MANIFEST_PATH, classes_path: Path = CLAS
 
 
 class TrafficSignDataset(Dataset):
-    def __init__(self, manifest: pd.DataFrame, root: Path, transform=None):
+    def __init__(self, manifest: pd.DataFrame, root: Path, transform=None, decode_size: int | None = None):
+        self.decode_size = decode_size  # JPEG draft hint: decode large photos at reduced scale
         self.paths = [Path(root) / p for p in manifest["path"]]
         self.labels = manifest["label_id"].astype(int).tolist()
         self.transform = transform
@@ -42,14 +43,17 @@ class TrafficSignDataset(Dataset):
 
     def __getitem__(self, i: int):
         with Image.open(self.paths[i]) as im:
+            if self.decode_size and im.format == "JPEG":
+                # DCT-domain downscale (>= 2x the target); only affects images much larger than the model input
+                im.draft("RGB", (2 * self.decode_size, 2 * self.decode_size))
             img = im.convert("RGB")
         if self.transform is not None:
             img = self.transform(img)
         return img, self.labels[i]
 
 
-def make_loader(manifest, root, transform, batch_size, shuffle, num_workers=0, seed=0):
+def make_loader(manifest, root, transform, batch_size, shuffle, num_workers=0, seed=0, decode_size=None):
     g = torch.Generator()
     g.manual_seed(seed)
-    return DataLoader(TrafficSignDataset(manifest, root, transform), batch_size=batch_size,
+    return DataLoader(TrafficSignDataset(manifest, root, transform, decode_size), batch_size=batch_size,
                       shuffle=shuffle, num_workers=num_workers, generator=g if shuffle else None)

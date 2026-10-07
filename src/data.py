@@ -108,7 +108,7 @@ def grouped_stratified_split(df: pd.DataFrame, seed: int, n_folds: int = 7):
     return pd.Series(split, index=df.index, name="split")
 
 
-def carve_val_from_train(df: pd.DataFrame, seed: int, n_folds: int = 6) -> pd.Series:
+def carve_val_from_train(df: pd.DataFrame, seed: int, n_folds: int = 5) -> pd.Series:
     """Official layout without a val split: hold out 1/n_folds of train (grouped) as val."""
     split = df["official_split"].copy()
     tr = df[df["official_split"] == "train"]
